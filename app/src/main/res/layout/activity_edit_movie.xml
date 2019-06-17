@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditMovie">
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID:" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title:" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch on:" />
+
+    <EditText
+        android:id="@+id/editTextWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewReleased"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Released on:" />
+
+    <EditText
+        android:id="@+id/editTextReleased"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating:" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+</LinearLayout>
